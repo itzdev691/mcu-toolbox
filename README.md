@@ -17,5 +17,7 @@ Flash the Firmware In the installer window, select the correct port, firmware ve
 ## Method 2: Using Vendor-Specific GUI Tools
 Some board manufacturers provide dedicated, easy-to-use GUI tools for flashing their specific boards. 
 * Arduino Boards For boards like the Arduino Nano ESP32, dedicated "Firmware Installer" applications are available from Arduino documentation that automate the process.
+
 * SparkFun Boards SparkFun offers a specific "SparkFun MicroPython Firmware Updater" tool for their compatible boards.
+  
 * Drag-and-Drop (Raspberry Pi Pico) For the Raspberry Pi Pico, you can manually download the official MicroPython .uf2 file from the MicroPython downloads page and drag-and-drop it onto the RPI-RP2 volume that appears when connected in BOOTSEL mode
