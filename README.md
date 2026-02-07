@@ -7,6 +7,7 @@ Thonny is a popular Python IDE that includes a built-in feature for flashing Mic
 
 * Install Thonny Download and install the latest version of the Thonny IDE.
 Connect Your Board Connect your microcontroller to your computer via a USB cable. For Raspberry Pi Pico boards, you must press and hold the BOOTSEL button while plugging it in to enter mass storage mode.
+
 Open the Installer
 * In Thonny, go to Tools > Options > Interpreter tab.
 Select the appropriate MicroPython interpreter for your device (e.g., "MicroPython (Raspberry Pi Pico)" or "MicroPython (ESP32)").
