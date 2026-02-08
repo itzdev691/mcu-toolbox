@@ -1,4 +1,4 @@
-# mcu-toolbox
+# Microcontroller Core Components Toolbox
 
 ## 📌 Description
 A centralized collection of drivers, utilities, and example code for various microcontrollers, designed to simplify development, testing, and integration across multiple platforms.
