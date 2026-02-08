@@ -8,8 +8,8 @@ ap.active(True)
 
 # 3. Configure the netowrk credentials and security
 # Replace 'MyESP32' and 'mypassword' with your desired settings
-ap.config(essid='MyESP32'
-          password='mypassword'
+ap.config(essid='MyESP32',
+          password='mypassword',
           authmode=network.AUTH_WPA_WPA2_PSK)
 
 
