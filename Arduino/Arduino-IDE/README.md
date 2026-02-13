@@ -96,8 +96,9 @@ Contributions are welcome. Feel free to open an issue or submit a pull request.
 
 ## 📜 License
 
-Specify the license (e.g., MIT, GPL-3.0). If unsure, leave this section for later.
+
 
 ---
 
-Made with ❤️ by Devereaux Amor
+
+
