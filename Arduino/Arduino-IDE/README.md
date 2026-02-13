@@ -94,11 +94,19 @@ Known limitations or TODOs can go here.
 
 Contributions are welcome. Feel free to open an issue or submit a pull request.
 
-## 📜 License
+## 📄 License
+MIT License
+
+Copyright (c) 2026 itzdev691
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction...
 
 
 
 ---
+
 
 
 
