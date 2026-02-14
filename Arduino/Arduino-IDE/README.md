@@ -19,15 +19,6 @@ This project is designed for beginners and hobbyists who want a straightforward 
 * Hardware (if any):
 * Tools:
 
-## 📦 Installation
-
-```bash
-# clone the repo
-git clone https://github.com/your-username/your-repo.git
-
-# move into the project directory
-cd your-repo
-```
 
 Add any setup steps here (dependencies, flashing firmware, configuration, etc.).
 
@@ -106,6 +97,7 @@ in the Software without restriction...
 
 
 ---
+
 
 
 
