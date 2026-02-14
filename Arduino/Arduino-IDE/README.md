@@ -61,15 +61,7 @@ sudo usermod -a -G dialout $USER
 # example command
 ```
 
-## 📁 Project Structure
 
-```text
-project-root/
-├── src/
-├── drivers/
-├── docs/
-├── README.md
-```
 
 Briefly explain important folders or files.
 
@@ -97,6 +89,7 @@ in the Software without restriction...
 
 
 ---
+
 
 
 
