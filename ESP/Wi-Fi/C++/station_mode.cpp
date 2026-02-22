@@ -1,32 +1,42 @@
-// ESP32 Wi-Fi station mode (Arduino core).
-// Update SSID/PASSWORD, build with Arduino IDE or PlatformIO (Arduino framework).
-
 #include <WiFi.h>
 
-const char* kSsid = "YOUR_SSID";
-const char* kPassword = "YOUR_PASSWORD";
+const char* WIFI_SSID = "YOUR_SSID";
+const char* WIFI_PASS = "YOUR_PASSWORD";
 
-void setup() {
-  Serial.begin(115200);
+void connectWiFi() {
   WiFi.mode(WIFI_STA);
-  WiFi.begin(kSsid, kPassword);
+  WiFi.begin(WIFI_SSID, WIFI_PASS);
 
-  Serial.print("Connecting");
-  const unsigned long start_ms = millis();
-  while (WiFi.status() != WL_CONNECTED) {
+  Serial.print("Connecting to WiFi");
+  unsigned long start = millis();
+  const unsigned long timeoutMs = 20000; // 20s
+
+  while (WiFi.status() != WL_CONNECTED && (millis() - start) < timeoutMs) {
     delay(500);
-    Serial.print('.');
-    if (millis() - start_ms > 15000) {  // 15s timeout
-      Serial.println("\nFailed to connect");
-      return;
-    }
+    Serial.print(".");
   }
 
-  Serial.println();
-  Serial.print("Connected, IP: ");
-  Serial.println(WiFi.localIP());
+  if (WiFi.status() == WL_CONNECTED) {
+    Serial.println("\nConnected!");
+    Serial.print("IP: ");
+    Serial.println(WiFi.localIP());
+  } else {
+    Serial.println("\nFailed to connect.");
+  }
+}
+void setup() {
+  Serial.begin(115200);
+  delay(100);
+  connectWiFi();
+
+  // put your setup code here, to run once:
 }
 
 void loop() {
-  // Your code here.
+  // Keep connection alive
+  if (WiFi.status() != WL_CONNECTED) {
+    Serial.println("WiFi lost. Recconecting...");
+    connectWiFi();
+  }
+  delay(5000);
 }
