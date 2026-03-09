@@ -18,7 +18,7 @@ These scripts are intended to act as reference implementations within this MCU r
 ### 🛠 Requirements
 
 * ESP32 development board
-* Arduino IDE with ESP32 board support installed
+* Arduino IDE or ESP-IDF with ESP32 board support installed
 * Basic familiarity with Arduino sketches
 
 ---
