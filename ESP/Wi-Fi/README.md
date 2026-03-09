@@ -23,4 +23,4 @@ These scripts are intended to act as reference implementations within this MCU r
 
 ---
 
-Part of the **MCU Scripts Collection**, which provides examples
+Part of the **MCU-Toolbox**, which provides examples
