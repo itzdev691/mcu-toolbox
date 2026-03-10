@@ -1,5 +1,6 @@
 #include <WiFi.h>
 
+// Change to your credentials
 const char* WIFI_SSID = "YOUR_SSID";
 const char* WIFI_PASS = "YOUR_PASSWORD";
 
@@ -15,7 +16,7 @@ void connectWiFi() {
     delay(500);
     Serial.print(".");
   }
-
+// Show connection status
   if (WiFi.status() == WL_CONNECTED) {
     Serial.println("\nConnected!");
     Serial.print("IP: ");
