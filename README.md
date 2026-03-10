@@ -25,6 +25,6 @@ MIT License
 Copyright (c) 2026 itzdev691
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
+of this software and associated documentation files (the "MCU-Toolbox"), to deal
 in the Software without restriction...
 
