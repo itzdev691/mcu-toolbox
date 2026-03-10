@@ -5,6 +5,7 @@ from machine import Pin
 # Creates Wi-Fi interface in station mode (scans and connects to APs)
 def scan_aps():
     # ESP32 "D2" is commonly GPIO2; adjust if your board maps D2 differently.
+    # "D2" is the onboard LED
     scan_led = Pin(2, Pin.OUT)
     scan_led.on()
     wlan = network.WLAN(network.STA_IF)

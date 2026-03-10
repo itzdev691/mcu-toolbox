@@ -13,6 +13,7 @@ A centralized collection of drivers, utilities, and example code for various mic
 - ESP32 / ESP8266
 - Arduino-compatible boards
 - STM32 (planned/partial)
+- Raspberry Pi
 - Other microcontrollers as added
 
 ## 🛠️ Usage
