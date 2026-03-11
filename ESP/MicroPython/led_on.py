@@ -5,6 +5,8 @@ import time
 
 led = Pin(2, Pin.OUT)
 
+# Loop
+
 while True
     led.on()
     delay(0.5)
