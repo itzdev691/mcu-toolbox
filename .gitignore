@@ -207,4 +207,6 @@ marimo/_lsp/
 __marimo__/
 
 .DS_Store
+.codex/environments/environment.toml
+
 
