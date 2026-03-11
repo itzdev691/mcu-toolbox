@@ -1,6 +1,6 @@
 # 📡 ESP32 WiFi Scripts
 
-A collection of WiFi-related scripts for ESP32 microcontrollers. These examples demonstrate how ESP32 devices can connect to wireless networks, discover nearby access points, and communicate with other devices over WiFi.
+A collection of WiFi-related scripts for ESP32 microcontrollers. These examples demonstrate how ESP32 devices can connect to wireless networks, discover nearby access points, and communicate with other devices over WiFi. The C++ examples are dual-framework and can be built with both ESP-IDF and the Arduino IDE.
 
 The goal of this folder is to provide simple, practical examples that can be used as building blocks for larger networking and IoT projects. Each script focuses on a specific WiFi feature so developers can quickly understand the concept and adapt the code for their own applications.
 
