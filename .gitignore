@@ -208,5 +208,5 @@ __marimo__/
 
 .DS_Store
 .codex/environments/environment.toml
-
+.vscode/c_cpp_properties.json
 
