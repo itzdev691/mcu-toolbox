@@ -12,7 +12,7 @@ void setup() {
     WiFi.disconnect(true);
     delay(100);
 
-    Serial.println(Scannning...);
+    Serial.println("Scanning...");
     int n = WiFi.scanNetworks(false, true); // sync, include hidden
     if (n <= 0) {
         Serial.println("No networks found");
