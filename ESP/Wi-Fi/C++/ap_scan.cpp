@@ -29,9 +29,11 @@ void setup() {
     }
 }
 
+void loop() {}
+
 #elif defined(ESP_PLATFORM)
 
-#include <vectore>
+#include <vector>
 
 extern "C" {
 #include "nvs_flash.h"
@@ -81,10 +83,10 @@ static void scan_and_print() {
 
 extern "C" void app_main() {
     ESP_ERROR_CHECK(nvs_flash_init());
-    wifi_init_sta():
+    wifi_init_sta();
     scan_and_print();
 }
 
 #else
-#error "Unsupported platform: define ARUDINO or ESP_PLATFORM"
+#error "Unsupported platform: define ARDUINO or ESP_PLATFORM"
 #endif
