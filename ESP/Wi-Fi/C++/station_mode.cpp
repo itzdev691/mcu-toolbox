@@ -1,4 +1,4 @@
-#ifdef ARDUINO
+#if defined(ARDUINO)
 #include <WiFi.h>
 
 // Example placeholders: replace with your network credentials.
@@ -41,7 +41,7 @@ void loop() {
   }
   delay(5000);
 }
-#else
+#elif defined(ESP_PLATFORM)
 #include <string.h>
 
 #include "freertos/FreeRTOS.h"
@@ -134,4 +134,6 @@ extern "C" void app_main(void) {
     vTaskDelay(pdMS_TO_TICKS(5000));
   }
 }
+#else
+#error "Unsupported platform: define ARDUINO or ESP_PLATFORM"
 #endif
