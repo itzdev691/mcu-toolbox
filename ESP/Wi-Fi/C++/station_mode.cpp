@@ -36,7 +36,7 @@ void setup() {
 void loop() {
   // Keep connection alive
   if (WiFi.status() != WL_CONNECTED) {
-    Serial.println("WiFi lost. Recconecting...");
+    Serial.println("WiFi lost. Reconnecting...");
     connectWiFi();
   }
   delay(5000);
@@ -106,8 +106,10 @@ static void connectWiFi() {
 
   wifi_config_t wifi_config = {};
   strncpy(reinterpret_cast<char*>(wifi_config.sta.ssid), WIFI_SSID, sizeof(wifi_config.sta.ssid) - 1);
+  wifi_config.sta.ssid[sizeof(wifi_config.sta.ssid) - 1] = '\0';
   strncpy(reinterpret_cast<char*>(wifi_config.sta.password), WIFI_PASS,
           sizeof(wifi_config.sta.password) - 1);
+  wifi_config.sta.password[sizeof(wifi_config.sta.password) - 1] = '\0';
   wifi_config.sta.threshold.authmode = WIFI_AUTH_WPA2_PSK;
   wifi_config.sta.pmf_cfg.capable = true;
   wifi_config.sta.pmf_cfg.required = false;
