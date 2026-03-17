@@ -9,6 +9,7 @@ The goal of this folder is to provide simple, practical examples that can be use
 * Connect an ESP32 to a WiFi network
 * Scan and list nearby WiFi networks
 * Basic network communication examples
+* AP+STA repeater starter with NAT/forwarding (ESP-IDF build)
 * Lightweight scripts designed for experimentation and learning
 
 ### 🧠 Purpose
@@ -20,6 +21,11 @@ These scripts are intended to act as reference implementations within this MCU r
 * ESP32 development board
 * Arduino IDE or ESP-IDF with ESP32 board support installed
 * Basic familiarity with Arduino sketches
+
+### 📝 Notes
+
+* For `C++/wifi_repeater.cpp` in ESP-IDF, enable `CONFIG_LWIP_IP_FORWARD` and
+  `CONFIG_LWIP_IPV4_NAPT` in menuconfig to activate NAT/forwarding.
 
 ---
 
