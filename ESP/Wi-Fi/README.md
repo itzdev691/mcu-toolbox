@@ -11,6 +11,7 @@ The goal of this folder is to provide simple, practical examples that can be use
 * Basic network communication examples
 * AP+STA repeater starter with NAT/forwarding (ESP-IDF build)
 * Lightweight scripts designed for experimentation and learning
+* ESP-NOW Protocol
 
 ### 🧠 Purpose
 
